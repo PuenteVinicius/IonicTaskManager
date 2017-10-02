@@ -1,16 +1,30 @@
-// http://ionicframework.com/docs/theming/
+*{
+    font-style: normal;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;   
+}
 
-
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+.background-content{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/home.jpg) !important;
+    background-size: cover !important;
+    z-index: -1;
+}
+.transparent{
+    background: transparent !important;
+}
+.card-title{
+    color: black;
+}
+.background-card{
+    display: flex;
+    flex-flow: column;
+    margin-top:2rem;
+    background: white;
+}
+.ion-item-background{
+    background: transparent;    
+}

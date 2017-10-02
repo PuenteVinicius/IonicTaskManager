@@ -1,14 +1,10 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+<ion-header class="header">
 </ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="background-content">
+    <button (click)="openTasks()" [color]="myColor" class="home-button" ion-button round>Tarefas</button>
 </ion-content>
+<ion-footer>
+    <ion-col>
+        <ion-icon name="add"  (click)="openNewTask()"></ion-icon>
+    </ion-col>
+</ion-footer>

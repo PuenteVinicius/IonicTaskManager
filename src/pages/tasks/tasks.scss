@@ -1,0 +1,20 @@
+page-tasks {
+
+}
+.done-button{
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+    font-size: 30px;
+    color: #00ff00;
+    margin-left: 1rem;
+    margin-top: -1rem;
+    cursor:pointer;
+}
+.group{
+    display: flex;
+    flex-flow: row;
+}
+.extraclass{
+    color: grey !important;
+}

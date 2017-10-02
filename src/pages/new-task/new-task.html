@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Nova Tarefa</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="background-content" padding>
+  <ion-card class="background-card">
+    <ion-card-content class="card">
+      <ion-card-title class="card-title">
+        Crie uma nova tarefa
+        </ion-card-title>
+        <ion-item class="ion-item-background">
+            <ion-label color="primary" stacked>Tarefa</ion-label>
+            <ion-input  [(ngModel)]="task.name" type="text" placeholder="Nome da Tarefa"></ion-input>
+        </ion-item>
+        <ion-item class="ion-item-background">
+            <ion-label color="primary" stacked>Descrição</ion-label>
+            <ion-textarea  [(ngModel)]="task.description" placeholder="Descrição da tarefa"></ion-textarea>
+        </ion-item>
+        <div class="saveButton">
+          <button (click)="saveTask()" ion-button round outline>Salvar</button>
+        </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
