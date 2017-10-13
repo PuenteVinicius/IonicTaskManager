@@ -16,7 +16,8 @@
         <ion-card-content class="card">
           <ion-card-title class="card-title group">
             {{task.name}}
-            <ion-icon class="done-button" [class.extraclass]="!task.done" (click)="markAsDone(task)" ios="ios-checkmark-circle-outline" md="md-checkmark-circle-outline"></ion-icon>
+            <ion-icon class="done-button" [class.extraclass]="!task.isDone" 
+            (click)="markAsDone(task)" ios="ios-checkmark-circle" md="md-checkmark-circle"  name="checkmark-circle" ></ion-icon>
           </ion-card-title>
           <p>{{task.description}}</p>
         </ion-card-content>

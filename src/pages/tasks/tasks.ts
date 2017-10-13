@@ -20,6 +20,7 @@ export class TasksPage implements OnInit {
   ngOnInit(){
     this._service.getTasks().then((response)=>{
       this.tasks = response;
+      console.log("tarefas", this.tasks);
     })
   }
   markAsDone(data: any){
